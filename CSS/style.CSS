@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap');
+
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #FFFFFF;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-item {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    color:#000000;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.cabecalho-menu-item:hover{
+transition: all 1s ease;
+font-family: 'Bebas Neue', cursive;
+color:#000000;
+font-weight: 400;
+font-size: 28px;
+animation: bounce 1s;
+}
+
+.conteudo {
+    border-top: 0.4px solid #000000;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    align-items:initial;
+    gap: 32px;
+    margin-top: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color:#000000;
+    font-weight: 400;
+    font-size: 28px;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+}
+
+.conteudo-principal-titulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color:#000000;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+}
+.conteudo-principal-subtitulo {
+    font-family: 'Roboto Mono', monospace;
+    color:#000000;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.conteudo-principal-botao {
+    background-color: #000000;
+    width: 280px;
+    height: 134px;
+    box-shadow: 2px 3px 2px rgb(149, 143, 143);
+    border-radius: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.conteudo-principal-botao:hover {
+background: #4c4c4c;
+font-family: 'Bebas Neue', cursive;
+color:#000000;
+transition: all 2s ease;
+animation: bounce 1s;
+}
+
+.conteudo-principal-imagem{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    margin-right: 80px;
+}
+
+
+.separa-conteudo {
+    border-top: 0.4px solid #000000;
+    padding-top: 48px;
+    margin-left: 850px;
+    margin-right: 850px;
+    margin-top: 70px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.conteudo-secundario-escrito {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.conteudo-secundario-titulo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    color:#000000;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 28px;
+    color:#000000;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.4px solid #000000;
+    padding-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 200px;
+    gap: 260px;
+}
+
+.rodape-imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+
+}
+
+.rodape-imagem-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.animacao-sociais {
+    display: flex;
+    padding: 10px;
+}
+
+.animacao-sociais:hover {
+    animation: bounce 1s;
+}
